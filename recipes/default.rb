@@ -33,6 +33,7 @@ script "extract_ioncube_php" do
   code <<-EOH
   tar xvfz /usr/local/src/ioncube_loaders_lin_#{arch}.tar.gz
   mv /usr/local/src/ioncube /usr/local
+  chown -R root:root /usr/local/ioncube
   EOH
 end
 
